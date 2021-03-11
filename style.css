@@ -1,0 +1,75 @@
+* {
+	font: inherit;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Helvetica,
+		Arial, sans-serif;
+	background: #616161; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #9bc5c3, #616161); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#9bc5c3,
+		#616161
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-size: 5rem;
+}
+
+.dial {
+	position: relative;
+	height: 400px;
+	width: 400px;
+}
+
+.timer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.timer input {
+	display: block;
+	border: none;
+	font-size: 90px;
+	text-align: center;
+	background: rgba(103, 170, 159, 0);
+}
+
+.timer button {
+	border: none;
+	font-size: 36px;
+	cursor: pointer;
+	background: rgba(103, 170, 159, 0);
+}
+
+.timer button:focus {
+	outline: none;
+}
+
+.timer input:focus {
+	outline: none;
+}
+
+.controls {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 10;
+}
